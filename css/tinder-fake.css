@@ -1,0 +1,29 @@
+.self-life{
+    width: 300px;
+    height: 500px;
+}
+.space-self-life{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+li{
+    display: flex;
+}
+#information-girl{
+    display: flex;
+    justify-content: center;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+img{
+    align-self: center;
+    width: 24px;
+    height: 24px;
+}
