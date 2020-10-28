@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tinder Fake</title>
     <link rel="stylesheet" href="css/tinder-fake.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="content">
+    <div id="menu-bar" class="navigation-bar">
+        <button class="btn-navigation" id="btn-navigation"><i class="material-icons">&#xe5d3;</i></button>
+        <button class="btn-navigation" id="btn-close"><i class="material-icons">&#xe5cd;</i></button>
+    </div>
     <div class="space-self-life">
-        <img class="self-life" src="images/leu_leu.jpg" alt="hot girl" >
+        <img class="self-life-header" src="images/leu_leu.jpg" alt="hot girl">
     </div>
     <div id="information-girl">
         <ul>
@@ -25,12 +34,18 @@
                 <p>Trường đại học Quốc gia Hà Nội</p></li>
         </ul>
     </div>
+    <hr>
     <div id="favorite-saying">
         <p>The best thing I can cook is..<br>Phở</p>
     </div>
     <div class="space-self-life">
-        <img class="self-life" src="../tinder-fake/images/omg.jpg" alt="" >
+        <img class="self-life" src="../tinder-fake/images/omg.jpg" alt="">
         <img class="self-life" src="../tinder-fake/images/jesus.jpg" alt="">
+    </div>
+    <div id="logo">
+        <button id="btn-super-like"><i class="glyphicon glyphicon-heart-empty"></i></button>
+        <button id="btn-like"><i class="glyphicon glyphicon-star-empty"></i></button>
+        <button id="btn-dis-like"><i class="material-icons">&#xe5cd;</i></button>
     </div>
 </div>
 </body>

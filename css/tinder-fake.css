@@ -1,29 +1,116 @@
-.self-life{
+.self-life {
     width: 300px;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.self-life-header {
+    width: inherit;
     height: 500px;
 }
-.space-self-life{
+
+.space-self-life {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-ul{
+
+ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     padding: 0px;
 }
-li{
+
+li {
     display: flex;
 }
-#information-girl{
+
+#information-girl {
     display: flex;
     justify-content: center;
     justify-items: flex-start;
     align-items: flex-start;
 }
-img{
+
+img {
     align-self: center;
     width: 24px;
     height: 24px;
+}
+
+#favorite-saying {
+    display: flex;
+    height: 150px;
+    width: 300px;
+    background: #ffe4c4;
+    align-self: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+#favorite-saying p {
+    align-self: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 300px;
+    background-color: lightgray;
+    height: 1px;
+}
+
+
+#logo {
+    position: fixed;
+    bottom: 27px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    align-self: center;
+    flex-direction: row-reverse;
+}
+button{
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: white;
+    justify-content: center;
+}
+i{
+    display: flex;
+    align-self: center;
+}
+
+#menu-bar{
+    align-self: center;
+    width: 300px;
+    position: fixed;
+}
+.navigation-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.btn-navigation{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: lightgray;
+    color: white;
+    border: lightgray;
 }
