@@ -10,6 +10,8 @@ desc.degree = "Trường đại học Quốc gia Hà Nội";
 //get link relative for src of tag image???
 let images = [];
 
+
+
 let user = new User("Thu Hà", 27, images, desc);
 
 content.innerHTML = user.getInformation();
