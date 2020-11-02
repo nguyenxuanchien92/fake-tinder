@@ -7,13 +7,14 @@ desc.height = "162 cm";
 desc.career = "beU Model Management";
 desc.degree = "Trường đại học Quốc gia Hà Nội";
 
-//get link relative for src of tag image???
 let images = ["../tinder-fake/images/hot_girl_03.jpg","../tinder-fake/images/hot_girl_02.jpg","../tinder-fake/images/hot_girl_01.jpg"];
 // let src = '../tinder-fake/images/';
 
 
 let user = new User("Thu Hà", 27, images, desc);
 
+
+//chưa kiểm soát được việc kiểm tra giá trị -buttonId-
 function selectButton(id){
     let buttons = document.getElementsByTagName('button');
 
