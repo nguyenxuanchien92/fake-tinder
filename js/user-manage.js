@@ -33,6 +33,11 @@ function selectButton(id){
     }
 }
 
-content.innerHTML = user.getInformation();
+function show(){
+    content.innerHTML = user.getInformation();
+}
 
-console.log(user);
+show();
+
+
+// console.log(user);
