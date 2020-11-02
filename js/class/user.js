@@ -51,7 +51,12 @@ class User {
     }
 
     getInformation() {
-        let str = `<div class="space-self-life"><img class="self-life-header" src="${this._images[0]}" alt="hot girl"></div>
+        let str = `
+    <div id="menu-bar" class="navigation-bar">
+        <button class="btn-navigation" id="btn-navigation"><i class="material-icons">&#xe5d3;</i></button>
+        <button class="btn-navigation" id="btn-close"><i class="material-icons">&#xe5cd;</i></button>
+    </div>
+    <div class="space-self-life"><img class="self-life-header" src="${this._images[0]}" alt="hot girl"></div>
     <div id="information-user"><ul><li><h3 id="name-user">${this._name},${this._age}</h3></li>
         <li id="status-line">${this._desc._comment}</li>
         <li><img src="../tinder-fake/images/location.png" alt=""><p id="location-user">${this._desc._location}</p></li>
@@ -67,8 +72,12 @@ class User {
     <div class="space-self-life">
         <img class="self-life" src="${this._images[1]}" alt="">
         <img class="self-life" src="${this._images[2]}" alt="">
+    </div>
+    <div id="logo">
+        <button id="btn-super-like"><i class="glyphicon glyphicon-heart-empty"></i></button>
+        <button id="btn-like"><i class="glyphicon glyphicon-star-empty"></i></button>
+        <button id="btn-dis-like"><i class="material-icons">&#xe5cd;</i></button>
     </div>`
-
         return str;
     }
 }
