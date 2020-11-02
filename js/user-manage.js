@@ -14,7 +14,24 @@ let images = ["../tinder-fake/images/hot_girl_03.jpg","../tinder-fake/images/hot
 
 let user = new User("Thu Hà", 27, images, desc);
 
+function selectButton(id){
+    let buttons = document.getElementsByTagName('button');
 
+    for (let i = 0; i < buttons.length; i++) {
+        let buttonId = buttons[i].getAttribute('id');
+        switch (buttonId){
+            case 'btn-super-like':
+                alert(`btn-super-like ${id}`);
+                break;
+            case 'btn-like':
+                alert(`btn-like ${id}`);
+                break;
+            case 'btn-dis-like':
+                alert(`btn-dis-like ${id}`);
+                break;
+        }
+    }
+}
 
 content.innerHTML = user.getInformation();
 

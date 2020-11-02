@@ -74,9 +74,9 @@ class User {
         <img class="self-life" src="${this._images[2]}" alt="">
     </div>
     <div id="logo">
-        <button id="btn-super-like"><i class="glyphicon glyphicon-heart-empty"></i></button>
-        <button id="btn-like"><i class="glyphicon glyphicon-star-empty"></i></button>
-        <button id="btn-dis-like"><i class="material-icons">&#xe5cd;</i></button>
+        <button id="btn-super-like" onclick="selectButton(${this._idUser})"><i class="glyphicon glyphicon-heart-empty"></i></button>
+        <button id="btn-like" onclick="selectButton(${this._idUser})"><i class="glyphicon glyphicon-star-empty"></i></button>
+        <button id="btn-dis-like" onclick="selectButton(${this._idUser})"><i class="material-icons">&#xe5cd;</i></button>
     </div>`
         return str;
     }
