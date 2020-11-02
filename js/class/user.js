@@ -56,27 +56,27 @@ class User {
         <button class="btn-navigation" id="btn-navigation"><i class="material-icons">&#xe5d3;</i></button>
         <button class="btn-navigation" id="btn-close"><i class="material-icons">&#xe5cd;</i></button>
     </div>
-    <div class="space-self-life"><img class="self-life-header" src="${this._images[0]}" alt="hot girl"></div>
-    <div id="information-user"><ul><li><h3 id="name-user">${this._name},${this._age}</h3></li>
-        <li id="status-line">${this._desc._comment}</li>
-        <li><img src="../tinder-fake/images/location.png" alt=""><p id="location-user">${this._desc._location}</p></li>
-        <li><img src="../tinder-fake/images/height_person.png" alt=""><p id="height-user">${this._desc._height}</p></li>
-        <li><img src="../tinder-fake/images/degree.png" alt=""><p id="career-user">${this._desc._career}</p></li>
-        <li><img src="../tinder-fake/images/degree.png" alt=""><p id="degree-user">${this._desc._degree}</p></li></ul>
+    <div class="space-self-life"><img class="self-life-header" src="${this.images[0]}" alt="hot girl"></div>
+    <div id="information-user"><ul><li><h3 id="name-user">${this.name},${this.age}</h3></li>
+        <li id="status-line">${this.desc.comment}</li>
+        <li><img src="../tinder-fake/images/location.png" alt=""><p id="location-user">${this.desc.location}</p></li>
+        <li><img src="../tinder-fake/images/height_person.png" alt=""><p id="height-user">${this.desc.height}</p></li>
+        <li><img src="../tinder-fake/images/degree.png" alt=""><p id="career-user">${this.desc.career}</p></li>
+        <li><img src="../tinder-fake/images/degree.png" alt=""><p id="degree-user">${this.desc.degree}</p></li></ul>
     </div> 
     <hr>
     <div id="favorite-saying">
-        <p id="like-saying">${this._desc._comment_favorite}</p>
+        <p id="like-saying">${this.desc.comment_favorite}</p>
     </div>
 
     <div class="space-self-life">
-        <img class="self-life" src="${this._images[1]}" alt="">
-        <img class="self-life" src="${this._images[2]}" alt="">
+        <img class="self-life" src="${this.images[1]}" alt="">
+        <img class="self-life" src="${this.images[2]}" alt="">
     </div>
     <div id="logo">
-        <button id="btn-super-like" onclick="selectButton(${this._idUser})"><i class="glyphicon glyphicon-heart-empty"></i></button>
-        <button id="btn-like" onclick="selectButton(${this._idUser})"><i class="glyphicon glyphicon-star-empty"></i></button>
-        <button id="btn-dis-like" onclick="selectButton(${this._idUser})"><i class="material-icons">&#xe5cd;</i></button>
+        <button id="btn-super-like" onclick="selectButton(${this.idUser})"><i class="glyphicon glyphicon-heart-empty"></i></button>
+        <button id="btn-like" onclick="selectButton(${this.idUser})"><i class="glyphicon glyphicon-star-empty"></i></button>
+        <button id="btn-dis-like" onclick="selectButton(${this.idUser})"><i class="material-icons">&#xe5cd;</i></button>
     </div>`
         return str;
     }
