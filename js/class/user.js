@@ -52,8 +52,8 @@ class User {
 
     getInformation() {
         let str =` <div id="menu-bar" class="navigation-bar">
-            <button class="btn-navigation" id="btn-navigation"><i class="material-icons">&#xe5d3;</i></button>
-            <button class="btn-navigation" id="btn-close"><i class="material-icons">&#xe5cd;</i></button>
+            <button class="btn-navigation" id="btn-navigation" onclick="selectButton(this.id)"><i class="material-icons">&#xe5d3;</i></button>
+            <button class="btn-navigation" id="btn-close" onclick="selectButton(this.id)"><i class="material-icons">&#xe5cd;</i></button>
         </div>
         <div class="space-self-life"><img class="self-life-header" src="${this.images[0]}" alt="hot girl"></div>
         <div id="information-user"><ul><li><h3 id="name-user">${this.name},${this.age}</h3></li>
