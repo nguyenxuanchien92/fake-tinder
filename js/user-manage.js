@@ -1,7 +1,6 @@
 let content = document.getElementById("content");
 
-
-
+const RANGE = 3;
 
 
 function selectButton(id) {
@@ -41,10 +40,10 @@ function createUser() {
 
     let user = new User("Thu Hà", 27, images, desc);
     let user1 = new User("Hương", 27, images2, desc);
-    let user2 = new User("Hương", 27, images3, desc);
+    let user2 = new User("Thảo", 27, images3, desc);
 
-    let userArr = new Array(user,user1,user2);
-    return userArr ;
+    let userArr = new Array(user, user1, user2);
+    return userArr;
 }
 
 function show() {
@@ -56,8 +55,26 @@ function show() {
     content.innerHTML = user.getInformation();
 }
 
-function randomIndex(){
-    return Math.floor(Math.random()*2);
+function randomIndex() {
+    return Math.floor(Math.random() * RANGE);
+}
+
+function clickImage(id) {
+    switch (id) {
+        case '0':
+            redirectPage(id);
+            break;
+        case '1':
+            redirectPage(id);
+            break;
+        case '2':
+            redirectPage(id);
+            break;
+    }
+}
+
+function redirectPage(id) {
+    window.location = "http://localhost:63342/C0920i1/tinder-fake/comment-image.html";
 }
 
 createUser();

@@ -6,6 +6,35 @@ class Desc{
         this._height = height;
         this._career = career;
         this._degree = degree;
+        this._like = 0;
+        this._super_like = 0;
+        this._dis_like = 0;
+    }
+
+
+    get dis_like() {
+        return this._dis_like;
+    }
+
+    set dis_like(value) {
+        this._dis_like = value;
+    }
+
+    get like(){
+        return this._like;
+    }
+
+    set like(value){
+        this._like = value;
+    }
+
+
+    get super_like() {
+        return this._super_like;
+    }
+
+    set super_like(value) {
+        this._super_like = value;
     }
 
     get comment() {

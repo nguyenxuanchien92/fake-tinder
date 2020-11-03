@@ -51,12 +51,13 @@ class User {
     }
 
     getInformation() {
-        let str =` <div id="menu-bar" class="navigation-bar">
+        let str = ` <div id="menu-bar" class="navigation-bar">
             <button class="btn-navigation" id="btn-navigation" onclick="selectButton(this.id)"><i class="material-icons">&#xe5d3;</i></button>
             <button class="btn-navigation" id="btn-close" onclick="selectButton(this.id)"><i class="material-icons">&#xe5cd;</i></button>
         </div>
-        <div class="space-self-life"><img class="self-life-header" src="${this.images[0]}" alt="hot girl"></div>
-        <div id="information-user"><ul><li><h3 id="name-user">${this.name},${this.age}</h3></li>
+        <div class="space-self-life" ><img id="0" class="self-life-header" src="${this.images[0]}" alt="hot girl" 
+        onclick="clickImage(this.id)"></div>
+        <div id="information-user"><ul><li><h3 id="name-us er">${this.name},${this.age}</h3></li>
             <li id="status-line">${this.desc.comment}</li>
             <li><img src="../tinder-fake/images/location.png" alt=""><p id="location-user">${this.desc.location}</p></li>
             <li><img src="../tinder-fake/images/height_person.png" alt=""><p id="height-user">${this.desc.height}</p></li>
@@ -67,9 +68,9 @@ class User {
             <div id="favorite-saying">
                 <p id="like-saying">${this.desc.comment_favorite}</p>
             </div>
-            <div class="space-self-life">
-                <img class="self-life" src="${this.images[1]}" alt="">
-                    <img class="self-life" src="${this.images[2]}" alt="">
+            <div class="space-self-life" >
+                <img class="self-life" id="1"src="${this.images[1]}" onclick="clickImage(this.id)" alt="">
+                <img class="self-life" id="2"src="${this.images[2]}" onclick="clickImage(this.id)" alt="">
             </div>
             <div id="logo">
                 <button id="btn-super-like" onclick="selectButton(this.id)"><i class="glyphicon glyphicon-heart-empty"></i></button>
