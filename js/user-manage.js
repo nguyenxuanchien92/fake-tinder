@@ -23,13 +23,13 @@ function selectButton(id){
         switch (buttonId){
             case 'btn-super-like':
                 alert(`btn-super-like ${id}`);
-                break;
+                return;
             case 'btn-like':
                 alert(`btn-like ${id}`);
-                break;
+                return;
             case 'btn-dis-like':
                 alert(`btn-dis-like ${id}`);
-                break;
+                return;
         }
     }
 }
